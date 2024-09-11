@@ -9,6 +9,6 @@ import { RouterOutlet, RouterModule, RouterLink } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'h Sharp';
+  title = 'HSharp';
   footertext = 'Copyright ' + (new Date()).getFullYear() + ' - HSharp';
 }

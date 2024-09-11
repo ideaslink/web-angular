@@ -1,0 +1,72 @@
+[
+    {
+        "TopicID": 13,
+        "Topic": "eCommerce and web-enabled Applications",
+        "TopicBody": "One of the main features of eCommerce is to accept payment over the internet. There are many ways to support online payments. Most popular methods are Credit cards and Paypal.<br/><br/>We will set up your eCommerce system from scratch or implement it into your core business",
+        "Description": "eCommorce",
+        "Author": "Viewcrossing",
+        "Level": null,
+        "DateUpdated": "2021-10-14T14:44:34.1269245-04:00",
+        "Link": "../service/eCommerce.aspx",
+        "LinkMore": "../service/eCommerce.aspx",
+        "ParentTopicID": null,
+        "Images": [],
+        "Details": []
+    },
+    {
+        "TopicID": 14,
+        "Topic": "Databases and Reporting",
+        "TopicBody": "Databases we support, <ul><li>SQL Server</li><li>Oracle</li><li>Sybase</li></ul>",
+        "Description": "Databases and reports",
+        "Author": "Viewcrossing",
+        "Level": null,
+        "DateUpdated": "2021-10-14T14:44:34.1329218-04:00",
+        "Link": "",
+        "LinkMore": "../service/databases and reports.aspx",
+        "ParentTopicID": 13,
+        "Images": ["https://cdn.pixabay.com/photo/2022/04/06/20/29/airplane-7116299__340.jpg", "https://cdn.pixabay.com/photo/2022/04/11/09/32/glacier-7125359__340.jpg"],
+        "Details": []
+    },
+    {
+        "TopicID": 15,
+        "Topic": "Virtual Tour System",
+        "TopicBody": "A virtual tour is a simulation of an existing location, usually composed of a sequence of images. Virtual tour is currently widely adopted on various areas to simulate a sence or location in a way that users can view it, and control how they are going to view. <br/><br/> Our 360 Virtual tour system will help you bring in more customers",
+        "Description": "Virtual tour",
+        "Author": "",
+        "Level": 1,
+        "DateUpdated": "2021-10-14T14:44:34.1369183-04:00",
+        "Link": "./virtualtour.aspx",
+        "LinkMore": "",
+        "ParentTopicID": 13,
+        "Images": [],
+        "Details": []
+    },
+    {
+        "TopicID": 16,
+        "Topic": "Smartphone Software Development",
+        "TopicBody": "Smartphones now enjoy more and more market share<p>In addition to making phone calls, you can use a smartphone to perform these tasks, <ul><li>Web surfing</li><li>Watching online movies</li><li>Check emails</li><li>Online games</li><li>Receive important news and notifications</li><li>Work on-the-go</li></ul></p><p>We can help you do more of the things you love.</p>",
+        "Description": "Wireless and smartphone",
+        "Author": "",
+        "Level": 1,
+        "DateUpdated": "2021-10-14T14:44:34.1409154-04:00",
+        "Link": "./wireless-and-smartphones.aspx",
+        "LinkMore": "",
+        "ParentTopicID": 13,
+        "Images": [],
+        "Details": []
+    },
+    {
+        "TopicID": 17,
+        "Topic": "Windows Store Applications Development",
+        "TopicBody": "A Windows Store app (formerly known as Metro Style App) is a new type of app that is sold in the Windows Store and runs on Windows 8 devices. They run in full-screen by default and have a brand new look and feel.<br/><br/> They automatically work with a variety of input sources, including touch, pen, mouse, and keyboard. Instead of static icons, they use live tiles that can display notifications.",
+        "Description": "Windows phone and Windows store apps",
+        "Author": "",
+        "Level": 1,
+        "DateUpdated": "2021-10-14T14:44:34.1469125-04:00",
+        "Link": "./windows-store-apps.aspx",
+        "LinkMore": "",
+        "ParentTopicID": 14,
+        "Images": [],
+        "Details": []
+    }
+]
