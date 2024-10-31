@@ -13,14 +13,18 @@ export abstract class ApiService<T> {
   constructor(protected _http: HttpClient) { }
 
   getAll(args: IApiArgs): Observable<T[]> {
-    const header = {
+    const headers = new HttpHeaders({
       'Content-Type': (args.accept.length !== 0 ? args.accept : 'application/json')
-    };
-    const requestOptions = {
-      Headers: new HttpHeaders(header)
-    };
-    return this._http.get<T[]>(args.url,
-    { headers: { 'Content-Type': 'application/json; charset=utf-8'}})
+    })
+    // const header = {
+    //   'Content-Type': (args.accept.length !== 0 ? args.accept : 'application/json')
+    // };
+    // const requestOptions = {
+    //   Headers: new HttpHeaders(header)
+    // };
+    return this._http.get<T[]>(args.url, 
+      { headers })
+    // { headers: { 'Content-Type': 'application/json; charset=utf-8'}})
       .pipe(
         catchError(this.handleError)
       );

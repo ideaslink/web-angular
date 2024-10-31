@@ -19,7 +19,7 @@ export class ProductService extends ApiService<ITopicDTO> {
     super(_http);
   }
 
-  getProducts(pid: number): Observable<ITopicDTO[]> { // Observable<IProductDTO[]> {
+  getProducts(pid: number): Observable<ITopicDTO[]> {
     const url = '../../assets/topic_api.json'; // 'http://localhost:53855/api/topics/' + pid + '/details'; //
     const args: IApiArgs = { url: url, page: 1, count: 0, accept: 'application/json' };
     return this.getAll(args)
