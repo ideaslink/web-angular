@@ -23,8 +23,7 @@ export abstract class ApiService<T> {
     //   Headers: new HttpHeaders(header)
     // };
     return this._http.get<T[]>(args.url, 
-      { headers })
-    // { headers: { 'Content-Type': 'application/json; charset=utf-8'}})
+      { headers }) // { headers: { 'Content-Type': 'application/json; charset=utf-8'}})
       .pipe(
         catchError(this.handleError)
       );
@@ -33,5 +32,4 @@ export abstract class ApiService<T> {
   handleError(err: HttpErrorResponse) {
     return throwError('Error occurred! msg: ' + err.message + ' status: ' +  err.statusText);
   }
-
 }

@@ -7,7 +7,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
 export const routes: Routes = [
     { path: 'privatepolicy', component: PrivatePolicyComponent},
     { path: 'Product', component: ProductsComponent},    
-    // { path: 'Product/:id', component: ProductDetailComponent},
+    { path: 'Product/:id', component: ProductDetailComponent},
     { path: '', redirectTo: 'Welcome', pathMatch: 'full'},
     { path: '**', component: WelcomeComponent}
 ];
