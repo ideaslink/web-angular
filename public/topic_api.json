@@ -12,7 +12,7 @@
         "ParentTopicID": null,
         "Images": [],
         "Details": [],
-        "HasChildren": true
+        "HasDetail": true
     },
     {
         "TopicID": 14,

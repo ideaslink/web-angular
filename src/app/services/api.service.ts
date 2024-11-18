@@ -4,11 +4,14 @@ import { Observable, of, pipe, throwError } from 'rxjs';
 import { map, filter, tap } from 'rxjs/operators';
 import { catchError, retry } from 'rxjs/operators';
 import { IApiArgs } from '../models/iapi-args';
+import { ITopicDetailDTO } from '../models/itopic-detail-dto';
+import { error } from 'console';
 
 @Injectable({
   providedIn: 'root'
 })
 export abstract class ApiService<T> {
+  deta: any;
 
   constructor(protected _http: HttpClient) { }
 
@@ -16,17 +19,31 @@ export abstract class ApiService<T> {
     const headers = new HttpHeaders({
       'Content-Type': (args.accept.length !== 0 ? args.accept : 'application/json')
     })
-    // const header = {
-    //   'Content-Type': (args.accept.length !== 0 ? args.accept : 'application/json')
-    // };
-    // const requestOptions = {
-    //   Headers: new HttpHeaders(header)
-    // };
     return this._http.get<T[]>(args.url, 
-      { headers }) // { headers: { 'Content-Type': 'application/json; charset=utf-8'}})
+      { headers })
       .pipe(
         catchError(this.handleError)
       );
+  }
+
+  getDetails(args: IApiArgs, tid: number): Observable<ITopicDetailDTO[]> {
+    const headers = new HttpHeaders({
+      'Content-Type': (args.accept.length !== 0 ? args.accept : 'application/json')
+    })
+    return this._http.get<ITopicDetailDTO[]>(args.url, 
+      { headers })
+      .pipe(
+        map(result => result.filter(s => s.TopicID == tid)),
+        catchError(this.handleError)
+      );
+  }
+
+  setDetail(data: any) {
+    this.deta = data;
+  }
+
+  getData(){
+    return this.deta;
   }
 
   handleError(err: HttpErrorResponse) {

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet, RouterModule, RouterLink } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { ProductsComponent } from './products/products.component';
 
 @Component({
   selector: 'app-root',

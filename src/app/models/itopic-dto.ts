@@ -15,7 +15,7 @@ export interface ITopicDTO {
     Order: number;
 
     // linked content
-    Images: any;
+    Images: string[];
     Details: any;
 
     // additional
