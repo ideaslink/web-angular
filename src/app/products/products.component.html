@@ -1,10 +1,14 @@
 <div class="container">
-  <div class="well my-4">
-  <h1 class="bg-secondary text-white p-4">Solutions  </h1>
+  <div class="jumbotron bg-secondary text-white">
+    <h1 class="">Solutions  </h1>
+    <p class="my-2">Expertise and solutions</p>
   </div>
+  <!-- <div class="well my-2">
+  <h1 class="bg-secondary text-white p-4">Solutions</h1>
+  <p>Expertise and solutions</p>
+  </div> -->
   <span class="text fw-bold">Total - {{ this.topiccount }}</span> 
-
-  <div class="row my-4" *ngFor="let topic of topics$">
+  <div class="row my-4 py-2" *ngFor="let topic of topics$">
     <div class="col-sm-4">
     <h3 class="bg-secondary text-white p-3">
       {{ topic.Topic }}

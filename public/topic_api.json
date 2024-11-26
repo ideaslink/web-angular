@@ -26,7 +26,8 @@
         "LinkMore": "../service/databases and reports.aspx",
         "ParentTopicID": 13,
         "Images": ["https://cdn.pixabay.com/photo/2022/04/06/20/29/airplane-7116299__340.jpg", "https://cdn.pixabay.com/photo/2022/04/11/09/32/glacier-7125359__340.jpg"],
-        "Details": []
+        "Details": [],
+        "HasDetail": true
     },
     {
         "TopicID": 15,
@@ -40,7 +41,8 @@
         "LinkMore": "",
         "ParentTopicID": 13,
         "Images": [],
-        "Details": []
+        "Details": [],
+        "HasDetail": true
     },
     {
         "TopicID": 16,
@@ -54,7 +56,8 @@
         "LinkMore": "",
         "ParentTopicID": 13,
         "Images": [],
-        "Details": []
+        "Details": [],
+        "HasDetail": true
     },
     {
         "TopicID": 17,

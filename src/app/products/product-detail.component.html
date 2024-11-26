@@ -1,10 +1,11 @@
 
-<div class="container">
-  <div class="well my-4">
-  <h1 class="bg-secondary text-white p-4">Details</h1>
+<div class="container-fluid">
+  <div class="jumbotron bg-secondary text-white">
+    <h1 class="">Details</h1>
+    <p class="my-2">details and features</p>
   </div>
-  <div class="my-4" *ngFor="let topic of topics$">
-    <div class="">
+  <div class="row my-4" *ngFor="let chunk of topics$ | chunk: 3">
+    <div class="col-md-4" *ngFor="let topic of chunk">
     <div class="bg-light text-default p-3">
     <h4>
       {{ topic.Title }}
@@ -20,6 +21,24 @@
   </div>
     <hr/>
   </div>
+
+ <!--  <div class="row my-4" *ngFor="let topic of topics$ | chunk: 3">
+    <div class="col-md-4">
+    <div class="bg-light text-default p-3">
+    <h4>
+      {{ topic.Title }}
+    </h4>
+    <div class="text text-hidden">
+      {{ topic.DateUpdated | date }} 
+    </div>
+    </div>
+    <div class="text text-default my-4">
+      <div class="d-flex my-2"><img *ngIf="topic.ContentImages.length == 1" class="rounded mx-2" src={{topic.ContentImages[0]}} width="200"><span [innerHTML]="topic.Content"></span> </div>
+      <div class="d-inline-block" *ngFor="let image of topic.ContentImages"><img *ngIf="topic.ContentImages.length > 1" class="rounded m-1" src={{image}} width="200"></div>
+    </div>
+  </div>
+    <hr/>
+  </div> -->
 </div>
 
 <!-- <div class="container">

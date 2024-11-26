@@ -1,18 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PipeTransform } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap, ActivationEnd } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
+// import { switchMap } from 'rxjs/operators';
 import { IProductDTO } from '../models/iproduct-dto';
 import { ITopicDTO } from '../models/itopic-dto';
 import { ITopicDetailDTO } from '../models/itopic-detail-dto';
 import { ProductService } from '../services/product.service';
 import { CommonModule } from '@angular/common';
+import { ChunkPipe } from '../pipes/chunk.pipe';
 
 @Component({
   standalone: true,
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css'],
-  imports: [CommonModule]
+  imports: [CommonModule, ChunkPipe]
 })
 export class ProductDetailComponent implements OnInit {
   topicid: number = 0;
