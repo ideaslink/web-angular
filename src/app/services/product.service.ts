@@ -15,9 +15,9 @@ import { HttpClient } from '@angular/common/http';
 export class ProductService extends ApiService<ITopicDTO> {
   hasDetailcount = true;
 
-  constructor(protected override _http: HttpClient) {
-    super(_http);
-  }
+  // constructor(protected override _http: HttpClient) {
+  //   super(_http);
+  // }
 
   getProducts(pid: number): Observable<ITopicDTO[]> {
     const url = 'topic_api.json'; 

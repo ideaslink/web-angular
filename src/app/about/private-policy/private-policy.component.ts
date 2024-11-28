@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './private-policy.component.css'
 })
 export class PrivatePolicyComponent {
-
+appname = 'Point-n-Call';
 }

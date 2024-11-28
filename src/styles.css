@@ -34,6 +34,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  body {
+    margin: 0;
+    background: var(--gray-400);
+    font-size: 12px;
+  }
+
   h1 {
     font-size: 3.125rem;
     color: var(--gray-900);
