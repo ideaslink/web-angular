@@ -158,6 +158,15 @@
     fill: var(--gray-900);
   }
 
+  .columnOE {
+    background-color: white;
+    flex: 1;
+  }
+
+  .columnOE:nth-child(even) {
+    background-color: lightgreen;
+  }
+
   @media screen and (max-width: 650px) {
     .content {
       flex-direction: column;

@@ -1,4 +1,23 @@
-<div class="content" role="main">
-  <p>Welcome!</p>  
+<div class="" role="main">
+  <p>Total - {{itemcount}}</p>  <hr/>
+
+  <div id="idshowcase" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
+      <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#idchowcase" data-slide-to="0" class="active"></li>
+    <li data-target="#idchowcase" data-slide-to="1"></li>
+    <li data-target="#idchowcase" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner" style="height: 400px; width: auto;">
+    <div class="item" [ngClass]="{'active': i == 0}"  *ngFor="let item of $showItems; let i = index" >
+      <img src="{{item.Image}}" alt="{{item.Title}}" style="max-height: 400px; height: auto; width: 100%;">
+      <div class="carousel-caption">
+        <h3>{{item.Title}}</h3>
+        <p>{{item.Description}}</p>
+      </div>
+    </div>
+  </div>
+
 </div>
 

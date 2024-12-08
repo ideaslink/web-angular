@@ -4,21 +4,21 @@
     <h1 class="">Details</h1>
     <p class="my-2">details and features</p>
   </div>
-  <div class="row my-4" *ngFor="let chunk of topics$ | chunk: 3">
+  <div class="row my-4" *ngFor="let chunk of topics$ | chunk: 2">
     <div class="col" *ngFor="let topic of chunk">
-    <div class="bg-light text-default p-3 fs-3">
-    <span>
-      {{ topic.Title }}
-    </span>
-    <div class="text text-hidden">
-      {{ topic.DateUpdated | date }} 
+      <div class="bg-secondary text-white p-3 fs-3">
+        <span class="">
+          {{ topic.Title }}
+        </span>
+        <div class="text text-hidden">
+          {{ topic.DateUpdated | date }} 
+        </div>
+      </div>
+      <div class="text text-default my-4">
+        <div class="d-flex my-2"><span [innerHTML]="topic.Content"></span> <img *ngIf="topic.ContentImages.length == 1" class="rounded mx-2" src={{topic.ContentImages[0]}} width="200"></div>
+        <div class="d-inline-block" *ngFor="let image of topic.ContentImages"><img *ngIf="topic.ContentImages.length > 1" class="rounded m-1" src={{image}} width="200"></div>
+      </div>
     </div>
-    </div>
-    <div class="text text-default my-4">
-      <div class="d-flex my-2"><img *ngIf="topic.ContentImages.length == 1" class="rounded mx-2" src={{topic.ContentImages[0]}} width="200"><span [innerHTML]="topic.Content"></span> </div>
-      <div class="d-inline-block" *ngFor="let image of topic.ContentImages"><img *ngIf="topic.ContentImages.length > 1" class="rounded m-1" src={{image}} width="200"></div>
-    </div>
-  </div>
-    <hr/>
+      <hr/>
   </div>
 </div>

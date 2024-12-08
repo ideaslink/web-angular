@@ -1,8 +1,5 @@
-import { Component, OnInit, PipeTransform } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap, ActivationEnd } from '@angular/router';
-// import { switchMap } from 'rxjs/operators';
-import { IProductDTO } from '../models/iproduct-dto';
-import { ITopicDTO } from '../models/itopic-dto';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
 import { ITopicDetailDTO } from '../models/itopic-detail-dto';
 import { ProductService } from '../services/product.service';
 import { CommonModule } from '@angular/common';

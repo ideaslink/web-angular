@@ -1,12 +1,10 @@
 import { Injectable } from '@angular/core';
 import { ApiService } from './api.service';
-import { IProductDTO } from '../models/iproduct-dto';
 import { IApiArgs } from '../models/iapi-args';
 import { Observable } from 'rxjs';
 import { ITopicDTO } from '../models/itopic-dto';
 import { ITopicDetailDTO } from '../models/itopic-detail-dto';
 import { filter, map, catchError } from 'rxjs/operators';
-import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
