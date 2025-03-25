@@ -170,6 +170,10 @@
  .carousel-caption p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);}  
 
+.nav-item a {
+  font-family: Helvetica, sans-serif;
+}
+  
   @media screen and (max-width: 650px) {
     .content {
       flex-direction: column;

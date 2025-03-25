@@ -4,15 +4,15 @@
   <a class="navbar-brand" [routerLink]="['/Home']">
        <img src="favicon.ico" alt="hs" width="40px" />
   </a> 
-   <button class="navbar-toggler bg-light navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#idnav" aria-expanded="false" aria-label="Toggle navigation">
+   <button class="navbar-toggler navbar bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#idnav" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
    </button>
  
    <div class="collapse navbar-collapse fs-3" id="idnav">
      <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-unstyled">
-     <li class="nav-item"><a class="nav-link active" [routerLink]="['/Home']">Home</a></li>
-     <li class="nav-item"><a class="nav-link" [routerLink]="['/Product']">Solutions</a></li>
-     <li class="nav-item dropdown">
+     <li class="nav-item me-2"><a class="nav-link active" [routerLink]="['/Home']">Home</a></li>
+     <li class="nav-item me-2"><a class="nav-link" [routerLink]="['/Product']">Solutions</a></li>
+     <li class="nav-item dropdown me-2">
        <a class="nav-link btn dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" aria-haspopup="true" id="navbardropdown">Resources<span class="caret"></span></a>
        <ul class="dropdown-menu" aria-labelledby="navbardropdown">
          <li><a class='dropdown-item' href="http://www.microsoft.com">Microsoft</a></li>
@@ -20,7 +20,7 @@
          <li><a class='dropdown-item' href="http://www.google.com">Google</a></li>
        </ul>
      </li>
-     <li class="nav-item"><a class="nav-link" [routerLink]="['/Blog']">Blog</a></li>
+     <li class="nav-item me-2"><a class="nav-link" [routerLink]="['/Blog']">Blog</a></li>
      <li class='nav-item'><a class='nav-link' [routerLink]="['/privatepolicy']">Private policy</a></li>
    </ul>
    <form class="d-flex">
@@ -33,7 +33,7 @@
 
 <router-outlet></router-outlet>
 
-<footer class="text text-default mt-5">
-  <span class="glyphicon glyphicon-plus"></span> <small>{{ footertext }}</small>
+<footer class="text text-default my-5 border-top border-gray">
+  <span class="glyphicon glyphicon-plus my-2 fs-3"><small>{{ footertext }}</small></span> 
 </footer> 
 </div>
