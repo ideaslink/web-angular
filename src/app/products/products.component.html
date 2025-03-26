@@ -10,11 +10,12 @@
   <span class="text fw-bold fs-3">Total - {{ this.topiccount }}</span> 
   <div class="row my-4 py-2 fs-3" *ngFor="let topic of topics$">
     <div class="col-sm-4">
-    <h3 class="bg-secondary text-white p-4">
-      {{ topic.Topic }}
+    <h3 class="p-4 bg-secondary text-white">
+      {{ topic.Topic }}  
+      <br> <span class="fs-4">{{ topic.DateUpdated | date }}</span>
     </h3>
-    <div class="text text-secondary">
-      {{ topic.DateUpdated | date }} 
+    <div class="text px-4 fs-4">
+      <!-- {{ topic.DateUpdated | date }} -->
       <!-- [{{ topic.Author? topic.Author : "HSharp"}}] -->
     </div>
     </div>
