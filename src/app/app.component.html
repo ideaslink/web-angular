@@ -33,7 +33,10 @@
 
 <router-outlet></router-outlet>
 
-<footer class="text text-default my-5 border-top border-gray">
-  <span class="glyphicon glyphicon-plus my-2 fs-3"><small>{{ footertext }}</small></span> 
+<footer class="text my-5 border-top border-gray">
+  <a [routerLink]="['/Home']" class="text text-decoration-none footer">
+    <span class="glyphicon glyphicon-home my-2 fs-4"> {{ footertext }}</span>
+  </a>
+  <!-- <span class="glyphicon glyphicon-home my-2 fs-4"> {{ footertext }}</span>  -->
 </footer> 
 </div>

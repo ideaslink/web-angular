@@ -21,7 +21,7 @@
     </div>
     <div class="text text-default col-sm-8">
       <div [innerHTML]="topic.TopicBody"></div>
-      <div class="my-3" *ngIf="topic.HasDetail">
+      <div class="my-3 product-card" *ngIf="topic.HasDetail">
         <a class="item-link btn btn-primary fs-4" href="/Product/{{topic.TopicID}}">More</a>
       </div>
     </div>
