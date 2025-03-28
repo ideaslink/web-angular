@@ -1,4 +1,4 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# .gitignore
 
 # Compiled output
 /dist
@@ -10,6 +10,19 @@
 /node_modules
 npm-debug.log
 yarn-error.log
+
+# angular 
+dist/
+out-tsc/
+.angular/cache/
+.angular/config.json
+
+# compiled code and assets
+**/main.I.js
+**/ployfills.*.js
+**/runtime.*.js
+**/*.map
+**/*.bundle.*
 
 # IDEs and editors
 .idea/
@@ -27,6 +40,11 @@ yarn-error.log
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+
+# environment
+.env
+.env.local
+.env.*.local
 
 # Miscellaneous
 /.angular/cache
